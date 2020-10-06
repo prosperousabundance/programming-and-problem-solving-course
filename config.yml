@@ -1,0 +1,16 @@
+title: Programming & Problem Solving
+description: This course teaches How to Solve it by Computer?
+template:
+  repo: programming-and-problem-solving-template
+  name: programming-and-problem-solving
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
